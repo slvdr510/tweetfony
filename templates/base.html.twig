@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<title>{% block titulo %}{% endblock %} - Tweetfony</title>
+    <link rel="stylesheet" href="{{ asset('style.css') }}">
+</head>
+<body>
+<div class="topnav">
+    <img id="logo" src="{{ asset('images/logo.png') }}"/>
+    <a href="{{ path('demo_index') }}">Inicio</a>
+</div>
+<div id="principal">
+    {% block principal %}{% endblock %}
+</div>
+</body>
+</html>

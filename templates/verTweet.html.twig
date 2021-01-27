@@ -1,0 +1,16 @@
+{% extends "base.html.twig" %}
+{% block titulo %}{{ tweet.user.name }}: {{ tweet.text|u.truncate(30, '...') }} {{ parent() }}{% endblock %}
+{% block principal %}
+    <div class="singleTweet">
+        <div class="cabecera">
+            <a href="{{ path('ver_tweet', {'id': tweet.id}) }}">
+                <img class="avatarBig" src="{{ asset('images/avatars/' ~  tweet.user.userName ~ '-big.jpg') }}" />
+                <strong>{{ tweet.user.name }}</strong>
+                <span>@{{ tweet.user.userName }}</span>
+            </a>
+            <small class="time">{{ tweet.date|date("d/m/Y H:i:s") }}</small>
+        </div>
+        <div class="mensaje">{{ tweet.text }}</div>
+        <div class="likes">{{ tweet.likes|length }} 👍</div>
+    </div>
+{% endblock %}

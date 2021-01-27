@@ -1,0 +1,122 @@
+body {
+    background-color: #e6ecf0;
+    color: #14171a;
+    font-size: 14px;
+    line-height: 20px;
+    overflow-y: scroll;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin: 0;
+}
+
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    height: 46px;
+    position: relative;
+    width: 100%;
+    background: #fff;
+    text-align: center;
+}
+
+.topnav #logo {
+    height: 42px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #66757f;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #236E6E;
+    color: white;
+}
+
+#principal {
+    background-color: white;
+    border-bottom: 1px solid #e6ecf0;
+    width: 800px;
+    margin:auto;
+    margin-top:15px;
+}
+
+.tweetline {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+.tweetline .tweet {
+    min-height: 51px;
+
+    padding: 9px 12px;
+    border-bottom: 1px solid #e6ecf0;
+}
+
+.tweetline .tweet .contenido {
+    margin-left: 58px;
+}
+
+.tweetline .tweet .avatarSmall {
+    float: left;
+    margin-top: 3px;
+    margin-left: -58px;
+    position: absolute;
+    width: 48px;
+
+    height: 48px;
+
+    border-radius: 50%;
+
+    -moz-force-broken-image-icon: 1;
+}
+.tweetline .tweet .cabecera {
+    color: #657786;
+}
+.tweetline .tweet a {
+    color: #14171a;
+    text-decoration: none;
+}
+
+.singleTweet {
+    padding-left: 120px;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.singleTweet .mensaje {
+    font-size: 27px;
+    line-height: 32px;
+    letter-spacing: .01em;
+}
+
+.singleTweet .avatarBig {
+    transition: box-shadow .15s ease-in-out;
+    -moz-force-broken-image-icon: 1;
+    border-radius: 50%;
+    background: #fff;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    height: 200px;
+    position: absolute;
+    width: 200px;
+    margin-left: -210px;
+    margin-top: -30px;
+}
+
+
+.singleTweet a {
+    color: #14171a;
+    text-decoration: none;
+}
+.singleTweet .cabecera {
+    color: #657786;
+    font-size: 20px;
+}
